@@ -41,14 +41,26 @@ double taxEnvelopesCost$=0.06*totalEnvelopesCost$;    //tax for the total envelo
 double totalCost$=totalSockCost$+totalGlassCost$+totalEnvelopesCost$;    //total purchase before tax
 double totalTransaction$=1.06*totalCost$;       //total cost for the transaction after the tax
 
-System.out.println("totalSockCost="+totalSockCost$);
-System.out.println("totalGlassCost="+totalGlassCost$);
-System.out.println("totalEnvelopesCost="+totalEnvelopesCost$);
-System.out.println("taxSockCost="+taxSockCost$);
-System.out.println("taxGlassCost="+taxGlassCost$);
-System.out.println("taxEnvelopesCost="+taxEnvelopesCost$);
-System.out.println("totalCost="+totalCost$);
-System.out.println("totalTransaction="+totalTransaction$);
+System.out.println("socks are bought in this transaction");
+System.out.println("socks being bought are"+ nSocks);
+System.out.println("each pair of socks is"+ sockCost$);
+System.out.println("totalSockCost="+totalSockCost$*100/100.0);
+System.out.println("taxSockCost="+taxSockCost$*100/100.0);
+
+System.out.println("glasses are bought in this transaction");
+System.out.println("glasses being bought are"+ nGlasses);
+System.out.println("each glass is"+ glassCost$);
+System.out.println("totalGlassCost="+totalGlassCost$*100/100.0);
+System.out.println("taxGlassCost="+taxGlassCost$*100/100.0);
+
+System.out.println("envelopes are bought in this transaction");
+System.out.println("envelopes being bought are"+ nEnvelopes);
+System.out.println("each envelope is"+ envelopesCost$);
+System.out.println("totalEnvelopesCost="+totalEnvelopesCost$*100/100.0);
+System.out.println("taxEnvelopesCost="+taxEnvelopesCost$*100/100.0);
+
+System.out.println("totalCost="+totalCost$*100/100.0);
+System.out.println("totalTransaction="+totalTransaction$*100/100.0);
 
 
 }
